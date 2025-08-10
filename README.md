@@ -1,72 +1,19 @@
-# eject-vibe
+# create-vite-eject-vibe
 
-**Vite + React + Tailwind v4 template to host a Vibe's App.jsx.**
+Official Vite template for eject-vibe: **Vite + React + Tailwind v4 template to host a Vibe's App.jsx.**
 
 A minimal, modern template for quickly deploying your generated Vibe components as standalone React applications.
 
-## 🚀 Quickstart
+## 🚀 Usage
 
-### CLI (Preferred)
 ```bash
-npm create vite@latest my-app -- --template vibes-diy/eject-vibe
+npm create vite@latest my-app -- --template eject-vibe
 cd my-app
 npm install
 npm run dev
 ```
 
-### CLI (Fallback)
-If the above doesn't work:
-```bash
-npx degit vibes-diy/eject-vibe my-app
-cd my-app
-npm install
-npm run dev
-```
-
-### Web-based Usage
-- **[Use this template](https://github.com/VibesDIY/eject-vibe/generate)** - Create a new repo from this template
-- **[Open in StackBlitz](https://stackblitz.com/github/vibes-diy/eject-vibe)** - Edit online instantly
-- **[Deploy to Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/VibesDIY/eject-vibe)** - One-click deployment
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/VibesDIY/eject-vibe)
-
-## 📋 Initial Eject via Copy/Paste
-
-Once you have the template running:
-
-1. Replace the contents of `src/App.tsx` with your generated App.jsx code
-2. Optionally rename the file to `src/App.jsx` if you prefer pure JSX
-3. The hot reload will automatically update your app
-
-**Example App.jsx to paste:**
-```jsx
-export default function App() {
-  return (
-    <div className="min-h-dvh grid place-items-center bg-white text-gray-900">
-      <main className="p-6 max-w-xl text-center space-y-3">
-        <h1 className="text-2xl font-semibold">Your Vibe goes here</h1>
-        <p className="text-sm opacity-80">
-          Replace the component body in src/App.tsx with your generated App.jsx.
-        </p>
-      </main>
-    </div>
-  );
-}
-```
-
-## 🛠 Development
-
-**Requirements:** Node.js 20.19+ or 22.12+
-
-**Available scripts:**
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run format` - Format code with Prettier
-
-**Package managers:** This template works with npm, pnpm, or bun.
-
-## 🏗 What's Included
+## 📋 What You Get
 
 - **Vite** - Fast build tool and dev server
 - **React 19** - Latest React with TypeScript support
@@ -75,15 +22,23 @@ export default function App() {
 - **Prettier** - Code formatting
 - **TypeScript** - Type safety (optional - you can use .jsx files)
 
-## 🔧 Troubleshooting
+## 📋 Copy/Paste Your Vibe
 
-**CSS not loading?** Make sure Tailwind classes are working by checking if the placeholder text is styled.
+Once your project is running:
 
-**TypeScript errors?** You can rename `App.tsx` to `App.jsx` and remove TypeScript entirely if needed.
+1. Replace the contents of `src/App.tsx` with your generated App.jsx code
+2. Optionally rename the file to `src/App.jsx` if you prefer pure JSX
+3. The hot reload will automatically update your app
 
-**Build failing?** Ensure all dependencies are installed with `npm install` and your Node.js version is 20.19+ or 22.12+.
+## 🔗 Links
 
-**Vite template not found?** Use the degit fallback method shown above.
+- **[GitHub Repository](https://github.com/VibesDIY/eject-vibe)** - Source code and issues
+- **[Vibes.diy](https://vibes.diy)** - Generate beautiful React components
+- **[Template Documentation](https://github.com/VibesDIY/eject-vibe/blob/main/template/README.md)** - Full documentation
+
+## 📄 License
+
+Apache 2.0 - see [LICENSE](https://github.com/VibesDIY/eject-vibe/blob/main/template/LICENSE)
 
 ---
 
