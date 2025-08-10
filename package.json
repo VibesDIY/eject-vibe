@@ -1,29 +1,24 @@
 {
-  "name": "eject-vibe",
-  "private": true,
-  "version": "0.0.0",
+  "name": "create-vite-eject-vibe",
+  "version": "1.0.0",
+  "description": "Vite + React + Tailwind v4 template to host a Vibe's App.jsx",
   "type": "module",
+  "license": "Apache-2.0",
+  "author": "Vibes.diy",
+  "homepage": "https://github.com/VibesDIY/eject-vibe#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VibesDIY/eject-vibe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/VibesDIY/eject-vibe/issues"
+  },
+  "keywords": ["vite", "react", "tailwind", "template", "vibes"],
+  "files": ["template"],
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "format": "prettier --write .",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1"
-  },
-  "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.11",
-    "@types/react": "^19.1.9",
-    "@types/react-dom": "^19.1.7",
-    "@vitejs/plugin-react": "^4.7.0",
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.6",
-    "prettier": "^3.6.2",
-    "tailwindcss": "^4.0.0",
-    "typescript": "~5.8.3",
-    "vite": "^7.1.0"
+    "build-template": "./build-template.sh",
+    "check": "./build-template.sh && cd template && cp _package.json package.json && npm ci && npm run build && npx tsc --noEmit && npm run format --check && rm package.json",
+    "test-local": "./build-template.sh && ./test-template-pack.sh"
   },
   "engines": {
     "node": ">=20.19.0"
