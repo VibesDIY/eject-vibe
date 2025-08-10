@@ -1,0 +1,23 @@
+node_modules
+dist
+.DS_Store
+*.local
+
+# Template testing
+test-output/
+create-vite-eject-vibe-*.tgz
+
+# Template artifacts (should not be committed)
+template/node_modules/
+template/dist/
+template/package.json
+template/package-lock.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db

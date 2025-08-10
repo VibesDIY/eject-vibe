@@ -8,12 +8,14 @@ This document tracks verification of all template flows to ensure they work as e
 **Environment:** macOS, Node.js v22.10.0, npm 10.2.4
 
 ### Build Test
+
 ```bash
 npm run build
 # ✅ SUCCESS: Built in 906ms, generated dist/index.html and assets
 ```
 
 ### Development Server
+
 ```bash
 npm run dev
 # ✅ SUCCESS: Vite dev server starts on localhost:5173
@@ -22,6 +24,7 @@ npm run dev
 ```
 
 ### Copy/Paste Eject Flow
+
 ```bash
 # Replaced src/App.tsx content with App.example.jsx
 # ✅ SUCCESS: Hot reload immediately updated the display
@@ -31,12 +34,14 @@ npm run dev
 ## ⚠️ CLI Template Flow (To be tested after GitHub repo creation)
 
 ### Vite CLI Template
+
 ```bash
 npm create vite@latest test-app -- --template eject-vibe
 # ⏳ PENDING: Requires npm package to be published
 ```
 
 ### Degit Fallback
+
 ```bash
 npx degit vibes-diy/eject-vibe test-app
 # ⏳ PENDING: Requires repo to exist on GitHub first
@@ -45,12 +50,12 @@ npx degit vibes-diy/eject-vibe test-app
 ## ⏳ Web-based Flows (To be tested after GitHub repo creation)
 
 - **Use this template**: Requires GitHub repo
-- **StackBlitz**: Requires GitHub repo  
+- **StackBlitz**: Requires GitHub repo
 - **Netlify Deploy**: Requires GitHub repo
 
 ## 📋 Pre-deployment Checklist
 
-- [x] Template package.json has correct name: `eject-vibe` 
+- [x] Template package.json has correct name: `eject-vibe`
 - [x] Main package.json has correct name: `create-vite-eject-vibe`
 - [x] Tailwind CSS v4 with PostCSS configured correctly
 - [x] TypeScript compiles without errors
@@ -74,6 +79,6 @@ npx degit vibes-diy/eject-vibe test-app
 **Build Process**: ✅ VERIFIED  
 **Copy/Paste Flow**: ✅ VERIFIED  
 **CLI Flows**: ⏳ PENDING (requires npm package publication)  
-**Web Flows**: ⏳ PENDING (requires GitHub repo)  
+**Web Flows**: ⏳ PENDING (requires GitHub repo)
 
 **Overall**: Ready for GitHub repo creation and final verification of remote flows.

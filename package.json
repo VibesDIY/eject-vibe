@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "check": "cd template && npm ci && npm run build && npx tsc --noEmit && npm run format --check"
+    "check": "cd template && cp _package.json package.json && cp _package-lock.json package-lock.json && npm ci && npm run build && npx tsc --noEmit && npm run format --check && rm package.json package-lock.json",
+    "test-local": "npm link && rm -rf test-output && mkdir test-output && cd test-output && npm create vite@latest test-app -- --template eject-vibe && cd test-app && npm install && npm run build && npm run preview &",
+    "test-validate": "cd test-output/test-app && [ -f dist/index.html ] && [ -f src/App.tsx ] && [ -f package.json ] && echo '✅ Template validation successful' || echo '❌ Template validation failed'"
   },
   "files": [
     "template"

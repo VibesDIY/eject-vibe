@@ -7,6 +7,7 @@ A minimal, modern template for quickly deploying your generated Vibe components 
 ## 🚀 Quickstart
 
 ### CLI (Preferred)
+
 ```bash
 npm create vite@latest my-app -- --template eject-vibe
 cd my-app
@@ -15,7 +16,9 @@ npm run dev
 ```
 
 ### CLI (Fallback)
+
 If the above doesn't work:
+
 ```bash
 npx degit vibes-diy/eject-vibe my-app
 cd my-app
@@ -24,6 +27,7 @@ npm run dev
 ```
 
 ### Web-based Usage
+
 - **[Use this template](https://github.com/VibesDIY/eject-vibe/generate)** - Create a new repo from this template
 - **[Open in StackBlitz](https://stackblitz.com/github/vibes-diy/eject-vibe)** - Edit online instantly
 - **[Deploy to Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/VibesDIY/eject-vibe)** - One-click deployment
@@ -39,6 +43,7 @@ Once you have the template running:
 3. The hot reload will automatically update your app
 
 **Example App.jsx to paste:**
+
 ```jsx
 export default function App() {
   return (
@@ -59,6 +64,7 @@ export default function App() {
 **Requirements:** Node.js 20.19+ or 22.12+
 
 **Available scripts:**
+
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
