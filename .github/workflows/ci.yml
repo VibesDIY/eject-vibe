@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  test:
+  template-check:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -26,13 +26,10 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Type check
-        run: npx tsc --noEmit
+      - name: Check template
+        run: npm run check
 
-      - name: Build
-        run: npm run build
-
-  scaffold-smoke-test:
+  template-package-test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -44,10 +41,8 @@ jobs:
           node-version: 20
           cache: 'npm'
 
-      - name: Test degit scaffold
-        run: |
-          cd /tmp
-          npx degit ${{ github.repository }} test-scaffold
-          cd test-scaffold
-          npm ci
-          npm run build
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Test template package
+        run: npm run test-local
