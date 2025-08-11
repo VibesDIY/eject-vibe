@@ -55,7 +55,10 @@ const versions = {
   autoprefixer: '^10.4.21',
   prettier: '^3.6.0',
   typesReact: '^19.0.0',
-  typesReactDom: '^19.0.0'
+  typesReactDom: '^19.0.0',
+  vitest: '^2.0.0',
+  jsdom: '^25.0.0',
+  testingLibraryReact: '^16.0.0'
 }
 
 const templatePkg = {
@@ -67,7 +70,9 @@ const templatePkg = {
     dev: 'vite',
     build: 'tsc -b && vite build',
     preview: 'vite preview',
-    format: 'prettier --check .'
+    format: 'prettier --check .',
+    test: 'vitest run',
+    'test:watch': 'vitest'
   },
   dependencies: {
     react: versions.react,
@@ -83,7 +88,10 @@ const templatePkg = {
     autoprefixer: versions.autoprefixer,
     typescript: versions.typescript,
     vite: versions.vite,
-    prettier: versions.prettier
+    prettier: versions.prettier,
+    vitest: versions.vitest,
+    jsdom: versions.jsdom,
+    '@testing-library/react': versions.testingLibraryReact
   },
   engines: rootPkg.engines
 }

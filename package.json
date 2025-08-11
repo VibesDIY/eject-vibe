@@ -17,7 +17,7 @@
   "files": ["template"],
   "scripts": {
     "build-template": "bash ./build-template.sh",
-    "check": "bash ./build-template.sh && cd template && cp _package.json package.json && npm install --no-audit --no-fund --loglevel=warn && npm run build && ./node_modules/.bin/tsc --noEmit && npx prettier --check . && rm -f package.json package-lock.json && rm -rf node_modules dist && cd - > /dev/null",
+    "check": "bash ./build-template.sh && cd template && cp _package.json package.json && npm install --no-audit --no-fund --loglevel=warn && npm run -s test && npm run -s build && ./node_modules/.bin/tsc --noEmit && npx prettier --check . && rm -f package.json package-lock.json && rm -rf node_modules dist && cd - > /dev/null",
     "test-local": "bash ./build-template.sh && bash ./test-template-pack.sh"
   },
   "engines": {

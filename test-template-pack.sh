@@ -45,6 +45,10 @@ echo "📋 Installing dependencies..."
 npm install --no-audit --no-fund --loglevel=warn
 
 echo ""
+echo "🧪 Running unit tests (template)..."
+npm test --silent
+
+echo ""
 echo "🏗️ Testing TypeScript compilation..."
 npx tsc --noEmit
 
