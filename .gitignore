@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Template testing
+test-output/
+create-vite-eject-vibe-*.tgz
+
+# Generated template (built from source files)
+template/
