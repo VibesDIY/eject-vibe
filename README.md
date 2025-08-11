@@ -4,6 +4,9 @@
 
 A minimal, modern template for quickly deploying your generated Vibe components as standalone React applications.
 
+> **Note**  
+> This repository stores the *template builder*. When you click “Use this template”, GitHub generates a new project that contains only the files inside the `template/` directory. The root-level scripts (`build-template`, `test-template-pack`, etc.) are for contributors maintaining the template itself.
+
 ## 🚀 Quickstart
 
 ### CLI (Preferred)
